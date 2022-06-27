@@ -1,0 +1,296 @@
+ *{
+     margin: 0;
+     padding: 0;
+     box-sizing: content-box;
+ }
+
+
+nav{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100% ;
+height: 80px;
+background-color: #00B827;
+}
+ 
+
+
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    flex-direction: row;
+    padding: 20px;
+
+  }
+ 
+
+.titNav1{
+    display: flex;
+    padding-right: 20px;
+
+}
+
+.titNav2{
+    display: flex;
+    padding-right: 20px;
+}
+
+.titNav3{
+    display: flex;
+    padding-right: 20px;
+}
+
+.titNav4{
+    display: flex;
+    padding-right: 20px;
+}
+
+.titNav5{
+    display: flex;
+    padding-right: 20px;
+}
+
+.logoNav{
+    display: flex;
+    border-radius: 30px;
+}
+
+form{
+    text-align: center;
+    background-color: chartreuse;
+    margin: 17px;
+    border-radius: 10px;
+    border-style: double;
+    padding: 20px;
+}
+
+legend{
+    font-size: 25px;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+
+
+footer{
+    display: flex;
+    background-color: #00B827;
+    justify-content: space-between;
+    padding: 20px;
+    height: 100%;
+
+}
+
+footer div a img{
+    display: flex;
+    display: inline;
+    border-radius: 40px;
+    height: 35px;
+    position: relative;
+}
+
+
+footer h5{
+    display: flex;
+    position: relative;
+    top: 10px;
+}
+
+
+.titCol1{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+
+}
+
+.titCol1 img{
+    width: 20%;
+    padding-bottom: 25px;
+    border-radius: 70px;
+}
+
+main div h5{
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    color: #000 ;
+}
+
+
+.txtImg{
+    width: 100%;
+    height: 600px;
+    background-image: url(../header\ qeep.JPG);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.txtImg h1{
+    color: #fff;
+    font-size: 35px;
+
+}
+
+.tarjetasCol{
+    background-color: #056B3F;
+}
+
+.tarjetaCol1{
+    border: 3px solid #000;
+}
+.tarjetaCol2{
+    border-right: 3px solid #000;
+    border-left: 3px solid #000;
+}
+.tarjetaCol3{
+    border: 3px solid #000;
+}
+
+main p{
+    padding: 20px;
+    font-size: 19px;
+    font-style: oblique;
+    background-color:#5BC778 ;
+}
+
+.contenedorEqp{
+    display: flex;
+}
+
+.contenedorMainEqp div img{
+    width: 100%;
+}
+
+.tarjetasEqp{
+    background-color: #056B3F;  
+     text-align: center; 
+}
+
+.tarjetasEqp1{
+    border: 3px solid #000;
+}
+.tarjetasEqp2{
+    border-right: 3px solid #000;
+    border-left: 3px solid #000;
+}
+.tarjetasEqp3{
+    border: 3px solid #000;
+}
+
+.contenedorMainContacto{
+    background-color: #056B3F;
+}
+
+.contenedorMainProd{
+    display: flex;
+    padding-top: 60px;
+    width: 100%;
+    justify-content: center;
+    
+}
+
+
+
+.imgProd{
+    height: 300px;
+}
+
+.tituloFotoProd{
+    font-size:15px ;
+    font-style: oblique;
+    position: relative;
+    top: 13px;
+}
+
+.h3Prod{
+    position: relative;
+    left: 700px;
+    bottom: 35px;
+}
+.h3ProdMasc{
+    position: relative;
+    left: 400px;
+    bottom: 35px;
+}
+
+.tarjetasProd img{
+    padding: 20px;
+}
+
+
+.contenedorProdMasc{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    border-bottom: solid 2px #000;
+}
+
+.tarjetasProdFem{
+    border: solid 1px #000;
+}
+.tarjetasProdMasc{
+    border: solid 1px #000;
+}
+
+.contenedorPadre{
+    display: grid;
+grid-template-columns: auto 100% auto;
+grid-template-areas: "nav nav nav"
+                      "main main main"
+                      "foot foot foot";
+ grid-template-rows: auto auto 30px;                     
+}
+
+.contenedorGridNav{
+    
+    grid-area: nav;
+    
+}
+.contenedorGrideMain{
+
+grid-area: main;
+
+}
+.contenedorGridFoot{
+
+grid-area: foot;
+
+}
+
+@media (max-width:576px){
+      nav ul{
+         flex-direction: column; 
+      }
+      nav{
+        height: 120px;
+        justify-content: space-around;
+      }
+      .infoFoot h5 {
+        text-align: center;
+      }
+      .titCol1{
+        flex-direction: column;
+        align-items: center;
+      }
+      .titCol1 img{
+        width: 80%;
+      }
+      .contenedorProdMasc{
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+        border-bottom: solid 2px #000;
+      }
+      .contenedorMainProd{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 60px;    
+      }
+}
+    
